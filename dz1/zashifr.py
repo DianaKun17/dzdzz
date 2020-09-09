@@ -13,9 +13,9 @@ def Caesar(tekst):
             result = result + letter
     return result
 
-b = open('Vorovaiki.txt', 'r')
+b = open('lukomorie.txt', 'r')
 text = "".join(b)
 c = Caesar(text)
-d = open('VorovaikiEnd.txt', 'w')
+d = open('lukomorieend.txt', 'w')
 d.writelines(c)
 d.close()
